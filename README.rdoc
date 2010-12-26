@@ -1,6 +1,6 @@
 = Erroneous
 
-Erroneous is a Rails view generator that creates simple markup for inline errors.
+Erroneous is a Rails view helper that creates simple markup for inline errors.
 
 == Installation
 
