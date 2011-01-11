@@ -1,0 +1,26 @@
+<%= form_for(@person) do |f| %>
+
+  <div class="field">
+    <%= f.label :name, "Name:" %>
+    <%= f.text_field :name %>
+    <%= errors @person, :name %>
+  </div>
+  <div class="field">
+    <%= f.label :url, "URL:" %>
+    <%= f.text_field :url %>
+    <%= errors @person, :url %>
+  </div>
+  <div class="field">
+    <%= f.label :email, "Email:" %>
+    <%= f.text_field :email %>
+    <%= errors @person, :email %>
+  </div>
+  <div class="field">
+    <%= f.label :phone, "Phone:" %>
+    <%= f.text_field :phone %>
+    <%= errors @person, :phone %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>
