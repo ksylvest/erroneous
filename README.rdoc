@@ -9,6 +9,13 @@ Erroneous is a Ruby on Rails view helper that creates simple markup for inline e
 == Examples
 
   <%= errors @user, :name %>
+  <div class="errors">can't be blank</div>
+  
+  <%= errors @user, :phone %>
+  <div class="errors">can't be blank and should look like a phone number</div>
+  
+  <%= errors @user, :email %>
+  <div class="errors">can't be blank and should look like an email address</div>
 
 == Copyright
 
