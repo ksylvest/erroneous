@@ -1,13 +1,7 @@
 # Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
 
-one:
-  name: MyString
-  url: MyString
-  email: MyString
-  phone: MyString
-
-two:
-  name: MyString
-  url: MyString
-  email: MyString
-  phone: MyString
+kevin:
+  name: Kevin
+  url: http://ksylvest.com/
+  email: info@ksylvest.com
+  phone: (555) 555-5555

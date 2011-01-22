@@ -3,7 +3,7 @@ module Erroneous
   require 'erroneous/railtie' if defined?(Rails)
   
   mattr_accessor :error_class
-  @@error_class = 'errors'
+  @@error_class = 'error'
   
   mattr_accessor :error_tag
   @@error_tag = :div
