@@ -1,6 +1,7 @@
 require 'test_helper'
 
 class PeopleControllerTest < ActionController::TestCase
+  
   setup do
     @person = people(:kevin)
   end
@@ -46,4 +47,5 @@ class PeopleControllerTest < ActionController::TestCase
 
     assert_redirected_to people_path
   end
+  
 end
