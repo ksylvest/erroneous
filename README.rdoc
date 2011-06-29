@@ -2,6 +2,17 @@
 
 Erroneous is a Ruby on Rails view helper that creates simple markup for inline errors.
 
+== Requirements
+
+The gem is tested with:
+
+* Ruby on Rails 3.0.9
+* Ruby (MRI) 1.9.2 (p180)
+* Ruby (MRI) 1.8.7 (p334)
+* Ruby (REE) 1.8.7 (2011.03)
+* JRuby 1.6.2
+* Rubinius
+
 == Installation
 
   gem install erroneous
