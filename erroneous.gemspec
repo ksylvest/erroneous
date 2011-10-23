@@ -1,5 +1,5 @@
 # -*- encoding: utf-8 -*-
-$:.push File.join(File.dirname(__FILE__), 'lib')
+$:.push File.expand_path("../lib", __FILE__)
 require "erroneous/version"
 
 Gem::Specification.new do |s|
@@ -11,5 +11,10 @@ Gem::Specification.new do |s|
   s.homepage    = "http://github.com/ksylvest/erroneous"
   s.summary     = "An easy way to display inline errors in forms"
   s.description = "Erroneous adds inline errors to Rails views in a simple, sentence like format."
-  s.files       = Dir.glob("{bin,lib}/**/*") + %w(README.rdoc LICENSE)
+
+  s.files       = Dir["{bin,lib}/**/*"] + %w(README.rdoc LICENSE Rakefile)
+  s.test_files  = Dir["test/**/*"]
+
+  s.add_dependency "rails", "> 3.0.0"
+  s.add_development_dependency "sqlite3"
 end

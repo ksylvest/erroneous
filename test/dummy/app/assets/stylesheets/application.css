@@ -1,0 +1,39 @@
+/*
+ *= require_self
+ *= require_tree . 
+*/
+
+html, body
+{
+  font-family: Helvetica, Verdana, Arial, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+}
+
+.field
+{
+  padding: 10px 0px;
+}
+
+label
+{
+  display: block;
+}
+
+input[type="url"],
+input[type="tel"],
+input[type="text"],
+input[type="password"],
+textarea
+{
+  display: block;
+  padding: 8px;
+  width: 400px;
+}
+
+.errors
+{
+  color: #822;
+  font-size: 10pt;
+  font-weight: bolder;
+}

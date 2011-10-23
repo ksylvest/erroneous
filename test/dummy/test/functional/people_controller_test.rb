@@ -2,49 +2,51 @@ require 'test_helper'
 
 class PeopleControllerTest < ActionController::TestCase
   
+  fixtures :all
+  
   setup do
     @person = people(:kevin)
   end
-
+  
   test "should get index" do
     get :index
     assert_response :success
     assert_not_nil assigns(:people)
   end
-
+  
   test "should get new" do
     get :new
     assert_response :success
   end
-
+  
   test "should create person" do
     assert_difference('Person.count') do
       post :create, :person => @person.attributes
     end
-
+    
     assert_redirected_to person_path(assigns(:person))
   end
-
+  
   test "should show person" do
-    get :show, :id => @person.to_param
+    get :show, :id => @person.id
     assert_response :success
   end
-
+  
   test "should get edit" do
-    get :edit, :id => @person.to_param
+    get :edit, :id => @person.id
     assert_response :success
   end
-
+  
   test "should update person" do
-    put :update, :id => @person.to_param, :person => @person.attributes
+    put :update, :id => @person.id, :person => @person.attributes
     assert_redirected_to person_path(assigns(:person))
   end
-
+  
   test "should destroy person" do
     assert_difference('Person.count', -1) do
-      delete :destroy, :id => @person.to_param
+      delete :destroy, :id => @person.id
     end
-
+    
     assert_redirected_to people_path
   end
   
