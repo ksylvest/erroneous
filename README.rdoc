@@ -1,3 +1,33 @@
 = Erroneous
 
-This project rocks and uses MIT-LICENSE.
+Erroneous is a Ruby on Rails view helper that creates simple markup for inline errors.
+
+== Requirements
+
+The gem is tested with:
+
+* Ruby on Rails 3.1.1
+* Ruby (MRI) 1.9.2 (p290)
+* Ruby (MRI) 1.8.7 (p352)
+* Ruby (REE) 1.8.7 (2011.03)
+* JRuby 1.6.5
+* Rubinius 1.2.4
+
+== Installation
+
+  gem install erroneous
+  
+== Examples
+
+  <%= errors @user, :name %>
+  <div class="errors">can't be blank</div>
+  
+  <%= errors @user, :phone %>
+  <div class="errors">can't be blank and should look like a phone number</div>
+  
+  <%= errors @user, :email %>
+  <div class="errors">can't be blank and should look like an email address</div>
+
+== Copyright
+
+Copyright (c) 2010 - 2011 Kevin Sylvestre. See LICENSE for details.
