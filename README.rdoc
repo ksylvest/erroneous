@@ -28,6 +28,10 @@ The gem is tested with:
   
   <%= errors @user, :email %>
   <div class="errors">can't be blank and should look like an email address</div>
+  
+=== Status
+
+{<img src="http://travis-ci.org/ksylvest/erroneous.png" />}[http://travis-ci.org/ksylvest/erroneous]
 
 == Copyright
 
