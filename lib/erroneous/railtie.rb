@@ -4,7 +4,7 @@ require 'rails'
 module Erroneous
   class Railtie < Rails::Railtie
     initializer 'erroneous.initialize' do
-      ActionView::Helpers.send :include, Erroneous
+      ActionView::Base.send :include, Erroneous
     end
   end
 end
