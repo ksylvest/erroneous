@@ -31,7 +31,7 @@ The gem is tested with:
 
 == Status
 
-{<img src="http://travis-ci.org/ksylvest/erroneous.png" />}[http://travis-ci.org/ksylvest/erroneous]
+{<img src="https://travis-ci.org/ksylvest/erroneous.png" />}[https://travis-ci.org/ksylvest/erroneous]
 
 == Copyright
 
