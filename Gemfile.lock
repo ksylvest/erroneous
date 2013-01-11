@@ -120,8 +120,6 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
-  activerecord-jdbcmysql-adapter
-  activerecord-jdbcpostgresql-adapter
   activerecord-jdbcsqlite3-adapter
   appraisal
   coffee-rails (= 3.2.2)
