@@ -33,6 +33,8 @@ The gem is tested with:
 == Status
 
 {<img src="https://travis-ci.org/ksylvest/erroneous.png" />}[https://travis-ci.org/ksylvest/erroneous]
+{<img src="https://codeclimate.com/badge.png"}[https://codeclimate.com/github/ksylvest/erroneous]
+
 
 == Copyright
 
