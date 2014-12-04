@@ -28,14 +28,14 @@ class PeopleController < ApplicationController
 
   # POST /people
   def create
-    @person = Person.create(params[:person])
+    @person = Person.create(attributes)
     respond_with(@person)
   end
 
   # PUT /people/:id
   def update
     @person = Person.find(params[:id])
-    @person.attributes = params[:person]
+    @person.attributes = attributes
     @person.save
     respond_with(@person)
   end
@@ -46,4 +46,11 @@ class PeopleController < ApplicationController
     @person.destroy
     respond_with(@person)
   end
+
+private
+
+  def attributes
+    params.require(:person).permit(:name, :phone, :email, :url)
+  end
+
 end
