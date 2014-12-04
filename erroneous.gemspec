@@ -13,7 +13,6 @@ Gem::Specification.new do |s|
   s.description = "Erroneous adds inline errors to Rails views in a simple, sentence like format."
 
   s.files       = Dir["{bin,lib}/**/*"] + %w(README.rdoc LICENSE Rakefile)
-  s.test_files  = Dir["test/**/*"]
 
   s.add_dependency "rails", "> 3.0.0"
   s.add_development_dependency "appraisal"
